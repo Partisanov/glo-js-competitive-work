@@ -1,7 +1,7 @@
 export const render = (cards) => {
     const cardsWrap = document.querySelector('.cards');
     cardsWrap.innerHTML = "";
-    console.log(cards);
+
     if (cards.length == 0) {
         cardsWrap.textContent = 'no information about Heroes';
     } else {
