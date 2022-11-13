@@ -1,0 +1,26 @@
+{
+  "name": "marvel",
+  "version": "1.0.0",
+  "description": "site about marvel hero",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch --mode=development",
+    "start": "webpack serve --mode=development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Partisanov/glo-js-competitive-work.git"
+  },
+  "author": "Konstantin Pozharitskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Partisanov/glo-js-competitive-work/issues"
+  },
+  "homepage": "https://github.com/Partisanov/glo-js-competitive-work#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}

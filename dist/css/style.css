@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Marvel';
+  src: local('Marvel-Regular'), local('MarvelRegular'), url('../fonts/Marvel-Regular.woff2') format('woff2'), url('../fonts/Marvel-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Marvel';
+  src: local('Marvel-Bold'), local('MarvelBold'), url('../fonts/Marvel-Bold.woff2') format('woff2'), url('../fonts/Marvel-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding-top: 15px;
+  font-family: "Marvel", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  
+}
+.header__baner{
+    max-width: 100%;
+    min-height: 200px;
+    background-image: url('../img/header_img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.cards{
+  padding: 10px;
+  border: 3px solid #5C0606;
+  border-radius: 10px;
+  
+}
+.cards__item{
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top,rgba(92,6,6,0.3),transparent); 
+}
+.cards__item:hover .cards__item__img{
+  opacity: 0.4;
+
+}
+.cards__item:hover .cards__item__tittle{
+  display: none;
+}
+.cards__item:hover .cards__item__descr{
+  display: flex;
+}
+.cards__item__img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.cards__item__tittle{
+  position: absolute;
+  bottom: 0;
+  color: rgb(252, 250, 250);
+  font-weight: 700;
+  
+}
+.cards__item__descr{
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 10;
+
+  
+}
+.cards__item__desc__span{
+  display: block;
+  font-size: 24px;
+  color: #000
+
+}
+
+.cards__item__desc__span strong{
+  color: #5C0606;
+}
